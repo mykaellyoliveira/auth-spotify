@@ -1,0 +1,130 @@
+/* Definindo variáveis de cor */
+:root {
+    --spotify-green: #1db954;
+    --spotify-black: #191414;
+    --spotify-gray: #b3b3b3;
+    --white: #ffffff;
+  }
+  
+  /* Reset padrão de CSS */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para o cabeçalho da página */
+  header {
+    background-color: var(--spotify-black);
+    color: var(--white);
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 32px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  
+  /* Estilo para a seção do perfil do usuário */
+  #profile {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid var(--spotify-gray);
+    padding: 40px;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo para o nome do usuário */
+  #displayName {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--spotify-green);
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  /* Estilo para a imagem do perfil */
+  #avatar {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-color: var(--spotify-black);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo para a lista de informações do perfil */
+  ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para cada item da lista */
+  li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--spotify-black);
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  li span {
+    flex-grow: 1;
+  }
+  
+  li a {
+    color: var(--spotify-green);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  li a:hover {
+    color: rgba(29, 185, 84, 0.8);
+  }
+  
+  /* Estilo para o link de URI do Spotify */
+  #uri:before {
+    content: 'spotify:';
+  }
+  
+  /* Estilo para o link da URL */
+  #url:before {
+    content: 'https://';
+  }
+  
+  /* Estilo para o rodapé da página */
+  footer {
+    background-color: var(--spotify-black);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Media query para dispositivos móveis */
+  @media screen and (max-width: 767px) {
+    #profile {
+      padding: 20px;
+    }
+    #avatar {
+      width: 100px;
+      height: 100px;
+    }
+    #
